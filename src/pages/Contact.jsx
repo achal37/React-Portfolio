@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Contact = ({ toggleModal }) => (
-  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+  <div className="fixed inset-0 text-black flex items-center justify-center bg-black bg-opacity-50 z-50">
     <motion.div 
       className="bg-white p-8 lg:p-12 rounded-2xl shadow-xl w-full max-w-lg mx-auto font-sans relative"
       initial={{ opacity: 0, scale: 0.8 }}
@@ -18,15 +18,12 @@ const Contact = ({ toggleModal }) => (
 
       <h3 className="text-3xl font-bold mb-6 text-custom-teal text-center">Get in Touch</h3>
       
+      {/* Form with Formspree */}
       <form 
-        name="contact" 
+        action="https://formspree.io/f/mrbgbgan" 
         method="POST" 
-        data-netlify="true"
         className="space-y-6"
       >
-        {/* Hidden input for Netlify */}
-        <input type="hidden" name="form-name" value="contact" />
-
         <div className="relative">
           <input 
             type="text" 
