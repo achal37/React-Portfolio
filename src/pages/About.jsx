@@ -1,7 +1,6 @@
 import React from 'react';
 import defaultImage from '../assets/default_pr.png';
 
-// Skills Data
 const skills = [
   { name: "C++", level: 90 },
   { name: "JavaScript", level: 85 },
@@ -26,7 +25,6 @@ const projects = [
   },
 ];
 
-// Skill Bar Component
 const SkillBar = ({ name, level }) => (
   <div className="mb-6">
     <div className="flex justify-between items-center mb-2">

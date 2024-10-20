@@ -9,7 +9,6 @@ const Contact = ({ toggleModal }) => (
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4 }}
     >
-      {/* Close Button */}
       <button 
         onClick={toggleModal} 
         className="absolute top-4 right-4 bg-custom-teal text-custom-green-dark font-bold py-2 px-4 rounded-full shadow-md transition duration-300"
